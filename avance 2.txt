@@ -1,0 +1,21 @@
+   83  history
+   84  history > historial.txt
+   85  mkdir -p ~/security
+   86  mv *.txt ~/security/
+   87  sudo apt install ipset ipset-persistent -y
+   88  sudo ipset create america hash:net
+   89  for ip in $(cat ~/security/todas-las-ips-permitidas.txt); do     sudo ipset add america $ip; done
+   90  sudo ipset destroy america
+   91  sudo ipset create america hash:net
+   92  for ip in $(grep -v "^#" ~/security/todas-las-ips-permitidas.txt); do     sudo ipset add america $ip; done
+   93  sudo apt install dos2unix -y
+   94  dos2unix ~/security/todas-las-ips-permitidas.txt
+   95  sudo ipset destroy america
+   96  sudo ipset create america hash:net
+   97  for ip in $(grep -v "^#" ~/security/todas-las-ips-permitidas.txt); do     sudo ipset add america $ip; done
+   98  top
+   99  sudo ipset list america | head
+  100  ps aux | grep ipset
+  101  sudo netfilter-persistent save
+  102  sudo iptables-save > ~/iptables-backup.rules
+  103  history
