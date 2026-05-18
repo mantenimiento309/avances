@@ -1,0 +1,84 @@
+    1  ls
+    2  ls -la
+    3  sudo su
+    4  sudo -i
+    5  exit
+    6  sudo su
+    7  exit
+    8  sudo su miltonjosue236
+    9  exit
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd miltonjosue236
+   14  ls
+   15  ls -la
+   16  mkdir -p ~/.ssh
+   17  ls
+   18  ls -la
+   19  cd .ssh
+   20  cd ..
+   21  ls
+   22  ls -la
+   23  ls
+   24  chmod 700 ~/.ssh
+   25  ls -la
+   26  chmod 600 ~/.ssh/authorized_keys
+   27  nano ~/.ssh/authorized_keys
+   28  ls
+   29  chmod 600 ~/.ssh/authorized_keys
+   30  nano ~/.ssh/authorized_keys
+   31  chmod 600 ~/.ssh/authorized_keys
+   32  ls
+   33  exit
+   34  sudo su
+   35  groups
+   36  id
+   37  exit
+   38  groups
+   39  id
+   40  sudo -i
+   41  passwd
+   42  sudo su
+   43  exit
+   44  ls
+   45  sudo -l
+   46  sudo su
+   47  sudo -l
+   48  sudo apt update
+   49  sudo apt install fail2ban -y
+   50  sudo systemctl enable fail2ban
+   51  sudo systemctl start fail2ban
+   52  sudo fail2ban-client status
+   53  sudo nano /etc/ssh/sshd_config
+   54  sudo sshd -T | grep passwordauthentication
+   55  sudo nano /etc/ssh/sshd_config
+   56  sudo systemctl restart ssh
+   57  sudo systemctl restart ssh.socket
+   58  sudo apt update
+   59  sudo apt install nginx -y
+   60  sudo nano /etc/nginx/sites-available/agro-cleotech
+   61  sudo ln -s /etc/nginx/sites-available/agro-cleotech /etc/nginx/sites-enabled/
+   62  sudo nginx -t
+   63  sudo systemctl reload nginx
+   64  sudo ufw status
+   65  sudo apt update && sudo apt upgrade -y
+   66  sudo fail2ban-client status
+   67  sudo apt install ufw -y
+   68  sudo ufw default deny incoming
+   69  sudo ufw default allow outgoing
+   70  sudo ufw allow from 45.167.3.140 to any port 22
+   71  sudo ufw enable
+   72  sudo sshd -T | grep authentication
+   73  sudo nano /etc/ssh/sshd_config
+   74  sudo systemctl restart ssh
+   75  sudo systemctl restart ssh.socket
+   76  sudo nano /etc/fail2ban/jail.local
+   77  sudo systemctl restart fail2ban
+   78  sudo fail2ban-client status sshd
+   79  sudo ss -tulpn
+   80  sudo ufw deny 80
+   81  sudo nano /etc/nginx/nginx.conf
+   82  sudo nano /etc/nginx/sites-available/agro-cleotech
+   83  history
+   84  history > historial.txt
