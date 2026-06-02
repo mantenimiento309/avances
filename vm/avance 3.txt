@@ -1,0 +1,105 @@
+miltonjosue236@vm26:~$ history | sed -n '103,$p'
+  103  history
+  104  history | sed -n '83,103p' > "avance 2.txt"
+  105  sudo apt install unzip -y
+  106  unzip tradeflow-backend.zip
+  107  cd tradeflow-backend
+  108  node -v
+  109  sudo apt update
+  110  sudo apt install nodejs npm -y
+  111  nano server.js
+  112  cd public
+  113  nano server.js
+  114  ls
+  115  cd ..
+  116  ls
+  117  cd src
+  118  ls
+  119  nano server.js
+  120  npm install
+  121  npm start
+  122  sudo npm install -g pm2
+  123  pm2 start src/server.js --name tradeflow
+  124  pm2 start /server.js --name tradeflow
+  125  pm2 start server.js --name tradeflow
+  126  sudo nano /etc/nginx/sites-available/agro-cleotech
+  127  sudo nano /etc/nginx/nginx.conf
+  128  sudo systemctl reload nginx
+  129  sudo ufw allow 80/tcp
+  130  sudo apt install ufw -y
+  131  sudo ufw allow 22/tcp
+  132  sudo ufw --force enable
+  133  sudo journalctl -xeu ufw
+  134  sudo ufw allow 22/tcp
+  135  sudo ufw allow 80/tcp
+  136  sudo ss -tulpn | grep 4000
+  137  sudo ss -tulpn | grep :80
+  138  curl http://127.0.0.1
+  139  ls /etc/nginx/sites-enabled
+  140  sudo ln -s /etc/nginx/sites-available/agro-cleotech /etc/nginx/sites-enabled/
+  141  sudo nginx -t
+  142  sudo systemctl reload nginx
+  143  curl http://127.0.0.1
+  144  sudo rm /etc/nginx/sites-enabled/default
+  145  sudo nginx -t
+  146  sudo systemctl reload nginx
+  147  curl http://127.0.0.1
+  148  curl ifconfig.me
+  149  curl http://104.197.22.84
+  150  sudo ufw status verbose
+  151  sudo iptables -L -n
+  152  curl http://localhost
+  153  sudo ufw delete deny 80
+  154  sudo ufw status numbered
+  155  sudo ufw reload
+  156  pm2 logs tradeflow --lines 50
+  157  nano ~/tradeflow-backend/.env
+  158  pm2 restart tradeflow
+  159  pm2 logs tradeflow --lines 30
+  160  cat ~/tradeflow-backend/.env
+  161  nano ~/tradeflow-backend/.env
+  162  pm2 restart tradeflow --update-env
+  163  pm2 logs tradeflow --lines 30
+  164  pm2 logs tradeflow --lines 20
+  165  pm2 flush
+  166  pm2 restart tradeflow --update-env
+  167  pm2 logs tradeflow
+  168  ls -la ~/tradeflow-backend
+  169  cd ~/tradeflow-backend
+  170  pm2 delete tradeflow
+  171  pm2 start src/server.js --name tradeflow
+  172  curl http://127.0.0.1:4000/api/health
+  173  pm2 list
+  174  ls
+  175  zip -r tradeflow-backend.zip tradeflow-backend/ -x "tradeflow-backend/node_modules/*" "tradeflow-backend/data/*"
+  176  sudo apt update
+  177  sudo apt install zip -y
+  178  zip -r tradeflow-backend.zip tradeflow-backend/ -x "tradeflow-backend/node_modules/*" "tradeflow-backend/data/*"
+  179  uptime
+  180  ls -la /var/www/
+  181  pm2 list
+  182  sudo systemctl status nginx
+  183  cd /var/log/nginx
+  184  ls -lah
+  185  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -20
+  186  sudo awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -20
+  187  sudo zcat -f access.log* | awk '{print $1}' | sort | uniq -c | sort -nr | head -20
+  188  sudo zcat -f access.log* | grep -Ei "\.\./|%2e%2e|etc/passwd|win.ini"
+  189  sudo zcat -f access.log* | grep -Ei "wp-admin|wp-login|phpmyadmin|\.env|\.git|admin"
+  190  sudo zcat -f access.log* | awk '{print $7}' | sort | uniq -c | sort -nr | head -30
+  191  sudo zcat -f access.log* | awk '{print $9}' | sort | uniq -c | sort -nr
+  192  sudo zcat -f access.log* | head -50
+  193  curl http://localhost/.env
+  194  curl http://localhost/.git/config
+  195  curl -I http://localhost
+  196  curl -I http://104.197.22.84
+  197  sudo nano /etc/nginx/nginx.conf
+  198  sudo nginx -t
+  199  sudo systemctl reload nginx
+  200  curl -I http://localhost
+  201  pm2 show tradeflow
+  202  nano /home/miltonjosue236/tradeflow-backend/src/server.js
+  203  pm2 restart tradeflow
+  204  curl -I http://localhost
+  205  history | sed -n '103,$p'
+miltonjosue236@vm26:~$
